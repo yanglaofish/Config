@@ -1,0 +1,18 @@
+server:
+  port: 8892
+spring:
+  application:
+    name: purchase-service
+  datasource:
+    url: jdbc:mysql://124.220.108.194:3306/yys?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: XM1256789435
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+    fetch-registry: true
